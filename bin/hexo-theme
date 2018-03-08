@@ -9,14 +9,14 @@ const program = require('commander');
 program
   .version(require('../package').version)
   .option('-l, --log [s|g]', '查看log，s:server日志，g:watch日志')
-  .option('-U, --update [cli|server|mon-server]', '更新cli工具或者server')
-  .option('-i, --init', '初始化服务')
+  .option('-U, --update', '更新cli工具或者server')
+  .option('-i, --init [name]', '初始化服务')
   .parse(process.argv);
 
 // 命令状态
 let flag;
 
-if (program.init){ server.init();flag = true; }
+if (program.init){ server.init(program.init); flag = true; }
 
 // 如果没有匹配任何命令，则提示help
 if (!flag) { program.help(); }
