@@ -1,0 +1,22 @@
+{
+  "name": "hexo-theme-cli",
+  "version": "1.0.0",
+  "description": "Auto generate project template of hexo theme",
+  "main": "index.js",
+  "bin": {
+    "hexome": "bin/hexo-theme"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "hexo"
+  ],
+  "author": "Aphasia",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "shelljs": "^0.8.1"
+  }
+}
