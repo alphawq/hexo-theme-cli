@@ -12,23 +12,23 @@ Auto generate project template of hexo theme
 Install:
 
 ```
- $ npm install -g hexo-theme-cli
+$ npm install -g hexo-theme-cli
 ```
 
 You can use it by running:
 
 ```
-    hexome -h
+hexome -h
 ```
 
 You can use the `-i` parameter to specify the template engine you want to use 
 
 ```
-    hexome -i ejs
+hexome -i ejs
 
-    # or
+# or
 
-    hexome // `swig` is default
+hexome // `swig` is default
 ```
 
 ## Authors
