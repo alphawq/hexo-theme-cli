@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 
 const server = require('../lib/server');
@@ -8,15 +9,16 @@ const program = require('commander');
 // 用法
 program
   .version(require('../package').version)
-  .option('-l, --log [s|g]', '查看log，s:server日志，g:watch日志')
-  .option('-U, --update', '更新cli工具或者server')
-  .option('-i, --init [name]', '初始化服务')
+  .option('-l, log', '查看log')
+  .option('-u, update', '更新cli工具')
+  .option('-i, init [template]', '初始化工程', /^(swig|ejs)$/i, 'swig')
   .parse(process.argv);
 
 // 命令状态
 let flag;
 
 if (program.init){ server.init(program.init); flag = true; }
+if (program.update){ server.update(); flag = true; }
 
 // 如果没有匹配任何命令，则提示help
 if (!flag) { program.help(); }
