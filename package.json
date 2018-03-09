@@ -13,6 +13,7 @@
     "hexo"
   ],
   "author": "Aphasia",
+  "repository": "git@github.com:alphawq/hexo-theme-cli.git",
   "license": "ISC",
   "dependencies": {
     "chalk": "1.1.3",
