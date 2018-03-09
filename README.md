@@ -35,6 +35,6 @@ You can use the `-i` parameter to specify the template engine you want to use
 
 - [aphasia](https://github.com/alphawq)
 
-##License
+## License
 
 This project is licensed under the MIT License
